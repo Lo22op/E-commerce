@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, cupcake --cupcake, retro --retro, cyberpunk --cyberpunk, synthwave --synthwave, corporate --corporate, business --business, acid --acid, luxury --luxury, dracula --dracula, fantasy --fantasy, winter --winter;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+}
+
+.t{
+  transition: all 0.3s ease-in-out;
+}
+
+.m{
+  margin: 20px;
+  padding: 20px;
+}
+
+.imgA{
+  animation-name: floatY;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes floatY {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
